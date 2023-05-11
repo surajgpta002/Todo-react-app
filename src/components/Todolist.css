@@ -1,0 +1,138 @@
+#dataEntry{
+
+    height:15rem;
+    /* width:18rem; */
+    min-width:18rem;
+    padding:1.5rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: ghostwhite;
+    opacity: 0.8;
+    
+}
+
+#dataEntry > button{
+    width:5rem;
+    border-radius: 1rem;
+    margin:2.5rem;
+    margin-left:4.5rem;
+}
+
+#heading{
+    color: goldenrod;
+}
+#displayarea{
+    min-height:50vh;
+    height: auto;
+    width:60vw;
+    margin-left:10rem;
+}
+
+#displayarea .container{
+    width:75%;
+}
+#displayarea .container .row{
+    height: 5rem;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    padding:1.5rem;
+    background-color: ghostwhite;
+    opacity:0.8;
+}
+
+.button-area{
+    display: flex;
+    justify-content: space-evenly;
+    position:relative;
+    bottom:20%;
+}
+
+@media (max-width:1225px) {
+    #heading{
+        text-align: center;
+    }
+    #displayarea{
+        margin-left: 8rem;
+    }
+    #displayarea .container .row{
+        width: 30rem;
+    }   
+}
+
+@media (max-width:1028px){
+    .main-container{
+        flex-direction: column;
+    }
+    #dataEntry{
+        width:25rem;
+        margin-left: 15rem;
+    }
+
+    #dataEntry > button{
+        position:relative;
+        left:15%;
+    }
+}
+
+@media(max-width:918px){
+    #displayarea{
+        margin-left: 5rem;
+    }
+    #dataEntry{
+        margin-left: 12rem;
+    }
+}
+
+@media(max-width:785px){
+    #displayarea{
+        margin-left: 3rem;
+    }
+    #dataEntry{
+        margin-left: 9rem;
+    }
+    #heading{
+        margin-left: 5.5rem;
+    }
+}
+
+@media(max-width:652px){
+    #displayarea{
+        margin-left: 0rem;
+    }
+    #dataEntry{
+        margin-left: 4rem;
+        width:20rem;
+    }
+    #heading{
+        margin-left: 4rem;
+    }
+    #displayarea .container .row{
+        width: 25rem;
+    }
+    #dataEntry > button{
+        position:relative;
+        left:8%;
+    }  
+}
+@media(max-width:520px){
+    #dataEntry{
+        margin-left: 0rem;
+        width:17rem;
+    }
+    #displayarea .container .row{
+        width: 17rem;
+        position:relative;
+        right:15%;
+    }
+    .button-area > button{
+        margin:0.3rem;
+    }
+}
+@media(max-width:400px){
+    h1{
+        font-size: 1rem;
+    }
+    #heading{
+        font-size: 1rem;
+    }
+}
